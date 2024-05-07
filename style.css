@@ -1,0 +1,46 @@
+body {
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+}
+.sky {
+  height: 33vh;
+}
+.grass {
+  background-color: seagreen;
+  height: 33vh;
+  box-sizing: border-box;
+}
+.road {
+  background-color: dimgray;
+  height: 34vh;
+  box-sizing: border-box;
+  position: relative;
+}
+.lines {
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  left: 0;
+}
+
+.mario {
+  position: absolute;
+  top: -10%;
+  animation-name: mari;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate-reverse; */
+  /* animation-fill-mode: backwards; */
+}
+@keyframes mari {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(1584px);
+  }
+}
